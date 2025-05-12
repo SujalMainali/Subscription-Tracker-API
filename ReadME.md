@@ -60,8 +60,8 @@ The **Subscription Tracker API** is a backend service designed to help users man
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-repo/subscription-tracker.git
-   cd subscription-tracker
+   gh repo clone SujalMainali/Subscription-Tracker-API
+   cd Subscription-Tracker-API
 
 2. **Install Dependencies** 
    ```bash
@@ -76,9 +76,12 @@ The **Subscription Tracker API** is a backend service designed to help users man
    - DB_URI="your_mongodb_connection_string"
    - JWT_SECRET="your_jwt_secret"
    - JWT_EXPIRES_IN="3d"
+   - ARCJET_ENV="development"
    - ARCJET_KEY="your_arcjet_key"
    - QSTASH_URL="http://127.0.0.1:8080"
    - QSTASH_TOKEN="your_qstash_token"
+   - EMAIL="emailOfOrganization"
+   - EMAIL_PASSWORD= "PasswordFromAppPasswords"
 
 4. **Start the Server**
    ```bash
