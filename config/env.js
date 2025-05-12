@@ -10,8 +10,7 @@ import { config } from 'dotenv';
 //The process.env.NODE_ENV is not present at the beginning and can be set to 'production' when we want to run the code with production configuration
 config({path:`.env.${process.env.NODE_ENV || 'development'}.local`});
 
-//We receive PORT from process.env and export it so other that this variable may be used in other files
-//Here the PORT parameter from the process.env is exported
+
 export const {
     PORT, NODE_ENV, 
     DB_URI,JWT_SECRET,
@@ -19,5 +18,6 @@ export const {
     ARCJET_KEY,ARCJET_ENV,
     QSTASH_URL,QSTASH_TOKEN,
     QSTASH_CURRENT_SIGNING_KEY,
-    QSTASH_NEXT_SIGNING_KEY
+    QSTASH_NEXT_SIGNING_KEY,
+    EMAIL,EMAIL_PASSWORD
 }=process.env;

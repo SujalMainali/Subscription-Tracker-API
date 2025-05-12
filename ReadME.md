@@ -45,6 +45,7 @@ The **Subscription Tracker API** is a backend service designed to help users man
 - **Arcjet** — Security & rate-limiting middleware  
 - **JWT** — JSON Web Tokens for authentication  
 - **dotenv** — Environment variable management
+- **nodemailer** — Email Notification Sending
 
 ---
 
@@ -82,6 +83,10 @@ The **Subscription Tracker API** is a backend service designed to help users man
 4. **Start the Server**
    ```bash
    npm run dev
+
+5. **Start the Workflow at Local**
+   ```bash
+   npx @upstash/qstash-cli dev
 
 ---
 
@@ -145,9 +150,7 @@ The **Subscription Tracker API** is a backend service designed to help users man
 ---
 
 ## Future Enhancements
-
-- **Email & SMS Notifications**  
-  Integrate third-party services to deliver reminders directly to users.  
+ 
 - **Subscription Analytics**  
   Dashboards for usage trends, upcoming renewals, and spending summaries.  
 - **Recurring Payments**  
